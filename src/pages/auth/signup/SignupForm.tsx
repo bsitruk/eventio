@@ -8,7 +8,7 @@ type SignupFormProps = {
   onSuccess?: () => void;
 };
 
-export const SignupForm = (props: SignupFormProps) => {
+const SignupForm = (props: SignupFormProps) => {
   const [signupMutation] = useMutation(signup);
   return (
     <div>

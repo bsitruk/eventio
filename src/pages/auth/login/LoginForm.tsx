@@ -11,7 +11,7 @@ type LoginFormProps = {
   onSuccess?: (user: PromiseReturnType<typeof login>) => void;
 };
 
-export const LoginForm = (props: LoginFormProps) => {
+const LoginForm = (props: LoginFormProps) => {
   const [loginMutation] = useMutation(login);
   return (
     <div>
